@@ -3,6 +3,11 @@
 `dvt_the_one_sdk` Python SDK provides a intuitive way to interface with TheOneAPI service. Look up movie trivia, titles, quotes, character information and more in a simple and intuitve approach.
 
 
+Current version supported: `v2`
+Current active `endpoints` supported: `/movies`
+All non listed versions & endpoints will be rejected by sdk.
+
+
 Installation:
 ```
 pip install dvt_the_one_sdk
@@ -213,8 +218,6 @@ You can then run tests for the SDK
 ```
 pytest tests
 ```
-
-
 
 
 # Logging
