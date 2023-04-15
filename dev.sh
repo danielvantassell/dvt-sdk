@@ -1,0 +1,2 @@
+# export THE_ONE_API_KEY="A4EAmMSi7iZeDuTGJVD_"
+export THE_ONE_API_KEY="R7h9rkV2z5fWpjvESKs4"
