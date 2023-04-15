@@ -14,6 +14,7 @@ setup(
     packages=["src", "src.api", "src.client", "src.common"],
     install_requires=[
         'requests',
+        'requests_mock',
         'setuptools'
     ],
 )

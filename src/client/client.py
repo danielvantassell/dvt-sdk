@@ -1,12 +1,10 @@
 import configparser
-import os
 import requests
 
 from ..common.exceptions import InvalidApiKeyException, InvalidVersionException, InvalidEndpointException
 from ..common import constants as c
 from ..common.logger import Logger
 from ..common.utils import get_value_from_config
-
 
 
 class TheOneAPIClient():
@@ -48,20 +46,13 @@ class TheOneAPIClient():
         self.base_url = get_value_from_config(config, c.API, c.BASE_URL)
         self.timeout = get_value_from_config(config, c.API, c.TIMEOUT)
 
-        endpoints_config = config[c.ENDPOINTS]
-
         # set the endpoint URLs using the config
-        self.endpoints = {}
-
-
-        # add logic here for verifying endpoints
         self.endpoints = {
             endpoint_name: config.get(c.ENDPOINTS, endpoint_name)
             for endpoint_name in c.SUPPORTED_ENDPOINTS
         }
         return config
 
-    # add cache of some sort here but lets not setup redis or diff db
     def get(
         self,
         endpoint: str,

@@ -3,7 +3,6 @@ from ..common.utils import custom_title_case
 from ..common.exceptions import InvalidSearchKeyError
 
 
-
 class MoviesAPI:
     """
     This class contains methods for interfacing with TheOneAPI's
@@ -83,7 +82,6 @@ class MoviesAPI:
             sort=sort,
             **kwargs,
         )
-
 
 
     def get_all(
