@@ -8,6 +8,30 @@ The design approach for the API layer was to create a set of classes that repres
 
 The MoviesAPI class contains methods for interfacing with TheOneAPI's movies endpoint. Similarly, the CharactersAPI class contains methods for interfacing with TheOneAPI's characters endpoint.
 
+The client itself is in charge of handling all communication through requests.
+The endpoint API classes are in charge of extending functionality.
+
+```
+├── src
+│   ├── api
+│   │   ├── characters.py
+│   │   └── movies.py
+│   ├── client
+│   │   └── client.py
+│   ├── common
+│   │   ├── constants.py
+│   │   ├── exceptions.py
+│   │   ├── logger.py
+│   │   ├── singleton.py
+│   │   ├── utils.py
+│   │   └── version.py
+│   └── sdk.py
+└── tests
+    ├── mock.py
+    ├── test_client.py
+    └── test_movies.py
+```
+
 # Class Structure
 Each API class follows a similar structure: `src/<endpoint>/<functionality>`
 
