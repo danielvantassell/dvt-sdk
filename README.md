@@ -15,14 +15,15 @@ api_key = 'my_api_key'
 sdk = TheOneSDK(api_key)
 ```
 The api_key parameter is mandatory and must be a valid API key.
+To get your own API key, [go here](https://the-one-api.dev/)
 
-The movies_api instance provides methods for interfacing with TheOneAPI's movies endpoint.
 
-search
-This method searches for movies by name. Only movies with an exact character name match will be matched. Search is case-insensitive.
+
 
 # Search:
 For movie title names, the only approved key to search on is `name` and it must be an exact match.
+name search is case-insensitive.
+
 
 This method takes the following parameters:
 * name (required): The name of the movie to search for.
@@ -198,6 +199,16 @@ Note: Default offset will always be 0
  'offset': 2,
  'total': 8}
 ```
+
+# Clone & Testing
+Repo can be found and cloned [here](https://github.com/danielvantassell/lotr-sdk)
+Once cloned, the `virtualenv` & `requirements.txt` have been installed:
+```
+git
+```
+
+
+T
 
 # Logging
 Lower or raise logging settings.
