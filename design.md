@@ -8,7 +8,7 @@ The design approach for the API layer was to create a set of classes that repres
 The MoviesAPI class contains methods for interfacing with TheOneAPI's movies endpoint. Similarly, the CharactersAPI class contains methods for interfacing with TheOneAPI's characters endpoint.
 
 # Class Structure
-Each API class follows a similar structure:
+Each API class follows a similar structure: `src/<endpoint>/<functionality>`
 
 ## Constructor: Takes a TheOneAPIClient object as an argument. The client object is responsible for making the HTTP requests to TheOneAPI's endpoints.
 ## Methods: The API methods correspond to the different API operations that can be performed on the endpoint. Each method takes a set of arguments that correspond to the parameters for the API operation. The methods return the response from TheOneAPI's endpoint.
@@ -18,5 +18,7 @@ The API layer also includes error handling for when API operations fail. The Inv
 # Pagination
 The API layer also includes pagination functionality for endpoints that return a large number of results. The limit, page, and offset parameters can be used to limit the number of results returned and navigate through the results.
 
+
+
 # Future Improvements
-In the future, the API layer could be extended to include methods for additional endpoints in TheOneAPI. Additionally, the API layer could be extended to include more error handling and better support for pagination.
+Currently, the sdk grows based on endpoint organization, ie: `sdk.movies.search`.  All movie expansions such a s quote or detail view would be expanded by extending additional functionaltiy. This allows logical flow for expanding to more features such as `sdk.movies.quotes` or `sdk.characters.quotes`
