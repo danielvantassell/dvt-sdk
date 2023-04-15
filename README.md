@@ -204,11 +204,18 @@ Note: Default offset will always be 0
 Repo can be found and cloned [here](https://github.com/danielvantassell/lotr-sdk)
 Once cloned, the `virtualenv` & `requirements.txt` have been installed:
 ```
-git
+git clone https://github.com/danielvantassell/lotr-sdk.git
+virutalenv -p python3.11 .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+You can then run tests for the SDK
+```
+pytest tests
 ```
 
 
-T
+
 
 # Logging
 Lower or raise logging settings.
