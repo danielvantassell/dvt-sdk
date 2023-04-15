@@ -1,5 +1,6 @@
-# TheOneSDK API Layer Design
-##Overview
+# dvt-the-one-sdk Design
+
+## Overview
 TheOneSDK is a Python package that provides an API wrapper for TheOneAPI. The API layer is responsible for interfacing with TheOneAPI's endpoints for movies and characters.
 
 # Design Approach
