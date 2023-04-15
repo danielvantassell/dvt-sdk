@@ -37,7 +37,7 @@ This method takes the following parameters:
 ## Examples:
 Search for all movies with the exact name 'The Two Towers'
 ```
->>> response = movies_api.search(name="The Two Towers")
+>>> response = sdk.movies.search(name="The Two Towers")
 >>> print(response)
 {'docs': [{'_id': '5cd95395de30eff6ebccde5b',
            'academyAwardNominations': 6,
